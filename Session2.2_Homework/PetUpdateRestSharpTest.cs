@@ -78,10 +78,6 @@ namespace Session2._2_homework
             Assert.AreEqual(petData.Tags[0].Name, restResponse.Data.Tags[0].Name, "Tags did not match.");
             Assert.AreEqual(petData.Status, restResponse.Data.Status, "Status did not match.");
             #endregion
-
-            #region CleanUp
-            cleanUpList.Add(petData);
-            #endregion
         }
 
         [TestCleanup]
